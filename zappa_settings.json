@@ -1,0 +1,24 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "aws_region": "us-east-1",
+        "profile_name": "educate",
+        "project_name": "zappa",
+        "runtime": "python3.6",
+        "keep_warm": false,
+        "s3_bucket": "zappa-a2zy1fud9",
+        "apigateway_enabled": false,
+        "manage_roles": false,
+        "role_name": "robomaker_students",
+        "events": [
+          {
+            "function": "app.app",
+            "event_source": {
+                  "arn":  "arn:aws:s3:::test255423-2",
+                  "events": [
+                    "s3:ObjectCreated:*"
+                  ]
+               }
+            }]
+    }
+}
