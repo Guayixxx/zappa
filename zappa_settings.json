@@ -9,7 +9,7 @@
         "s3_bucket": "zappa-a2zy1fud9",
         "apigateway_enabled": false,
         "manage_roles": false,
-        "role_name": "robomaker_students",
+        "role_name": "LabRole",
         "events": [
           {
             "function": "app.app",
